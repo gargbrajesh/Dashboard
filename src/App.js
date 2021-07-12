@@ -1,16 +1,21 @@
 
 import './App.css';
-  // import Header from './component/Header';
- import { Container, ThemeProvider } from "@material-ui/core";
- import Header from './component/HeaderComponent/Header';
-import BodyData from './component/BodyComponent/BodyData';
+import { Container} from "@material-ui/core";
+import Topbar from './component/topbar/Topbar'
+import Sidebar from './component/sidebar/Sidebar'
+import Home from "./component/pages/home/Home"
 function App() {
  
   return (
    
       <Container>
-        <Header />
-        <BodyData />
+      <div>
+        <Topbar />
+        <div className ="container">
+          <Sidebar />
+          <Home />
+        </div>
+        </div>
       </Container>
 
   );
