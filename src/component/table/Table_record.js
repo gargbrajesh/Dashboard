@@ -48,12 +48,12 @@ function stableSort(array, comparator) {
 function Table_record() {
   const useStyle = makeStyles((theme) => ({
     root: {
-      maxWidth: "90vw",
+      maxWidth: "80vw",
       backgroundColor: theme.palette.primary[500],
       paddingTop: theme.spacing(2),
     },
     table: {
-      marginTop: theme.spacing(4),
+      marginTop: theme.spacing(2),
       "& thead th": {
         fontWeight: "600",
         color: theme.palette.primary.main,

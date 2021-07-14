@@ -1,0 +1,60 @@
+import React from "react";
+import Button from "@material-ui/core/Button";
+import Menu from "@material-ui/core/Menu";
+import MenuItem from "@material-ui/core/MenuItem";
+import MenuIcon from "@material-ui/icons/Menu";
+import "./topbar.css";
+import {
+  Book,
+  PostAdd,
+  NotificationsActive,
+  ExitToApp,
+} from "@material-ui/icons";
+export default function SimpleMenu() {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  return (
+    <div className ="simple_menu">
+      <Button
+        aria-controls="simple-menu"
+        aria-haspopup="true"
+        color="inherit"
+        onClick={handleClick}
+      >
+    <MenuIcon className="menu"></MenuIcon>
+      </Button>
+      <Menu
+        id="simple-menu"
+        anchorEl={anchorEl}
+        keepMounted
+        open={Boolean(anchorEl)}
+        onClose={handleClose}
+      >
+        <MenuItem onClick={handleClose}>
+          <Book className="sidebarIcon" />
+          Profile
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <PostAdd className="sidebarIcon" />
+          link1
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <NotificationsActive className="sidebarIcon" />
+          Notification
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <ExitToApp className="sidebarIcon" />
+          LogOut
+        </MenuItem>
+      </Menu>
+    </div>
+  );
+}

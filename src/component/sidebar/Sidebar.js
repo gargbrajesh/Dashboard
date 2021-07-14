@@ -1,5 +1,4 @@
 import "./sidebar.css";
-import { List, ListItem, ListItemIcon, ListItemText } from "@material-ui/core";
 import {
   Book,
   PostAdd,
@@ -24,15 +23,15 @@ export default function Sidebar() {
             </li>
             <li className="sidebarListItem">
               <NotificationsActive className="sidebarIcon" />
-              Notification{" "}
-            </li>{" "}
+              Notification
+            </li>
             <li className="sidebarListItem">
               <ExitToApp className="sidebarIcon" />
-              LogOut{" "}
-            </li>{" "}
-          </ul>{" "}
-        </div>{" "}
-      </div>{" "}
+              LogOut
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }

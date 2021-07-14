@@ -1,11 +1,27 @@
-.container {
+@media (min-width: 1200px) {
+  .container {
     display: flex;
     margin-top: 10px;
+   
+  }
 }
-.other{
+@media (min-width: 1200px) {
+  .other {
+    width: 100%;
+    margin-top: -10px;
+    /* position: sticky; */
+    margin-left: auto;
     
-     width: 80%;
-     margin-top: -10px;
-     position: sticky;
+  }
 }
-.sidebar{width: 20%;}
+
+.sidebar {
+  width: 20%;
+}
+@media (max-width: 999px) {
+  .other {
+    width: 100%;
+    margin-top: -10px;
+    /* position: sticky; */
+  }
+}

@@ -1,35 +1,102 @@
-.topbar {
+@media (min-width: 1200px) {
+  .topbar {
     width: 100%;
     height: 50px;
     background-color: #000066;
     top: 0;
     z-index: 999;
-}
+    position: sticky;
+  }
 
-.topbarWrapper {
+  .topbarWrapper {
     height: 100%;
     padding: 0px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
+  }
 
-.logo {
+  .logo {
     font-weight: bold;
     font-size: 30px;
     color: white;
     cursor: pointer;
-}
+  }
 
-.topRight {
+  .topRight {
     display: flex;
     align-items: center;
     color: white;
-}
+  }
 
-.topRight>Button:hover {
+  .topRight > Button:hover {
     display: flex;
     align-items: center;
     color: white;
     background: gray;
+  }
+
+  .menu {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .simple-menu {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 1200px) {
+  .topbar {
+    width: 100%;
+    height: 50px;
+    background-color: #000066;
+    top: 0;
+    z-index: 999;
+    position: sticky;
+  }
+
+  .topbarWrapper {
+    height: 100%;
+    padding: 0px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .topRight {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+
+  .topRight > Button:hover {
+    display: flex;
+    align-items: center;
+    color: white;
+    background: gray;
+  }
+
+  .menu {
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+  }
+  .sidebarIcon {
+    margin-right: 5px;
+    font-size: 20px !important;
+    color: #000066;
+  }
+  .btn {
+    opacity: 1;
+    visibility: hidden;
+    display: flex;
+    margin-right: -initial;
+  }
 }
