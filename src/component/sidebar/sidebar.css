@@ -1,13 +1,9 @@
 @media (min-width: 1200px) {
   .sidebar {
     flex: 1;
-    height: calc(100vh);
+    height:100vh;
     background-color: rgb(251, 251, 253);
-    /* position: sticky; */
-    top: 50px; 
-    margin-top: -5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 20%;
+    margin-top: -8px;
   }
 
   .sidebarWrapper {

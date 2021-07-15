@@ -40,7 +40,7 @@ export default function SimpleMenu() {
       >
         <MenuItem onClick={handleClose}>
           <Book className="sidebarIcon" />
-          Profile
+          Blog Post
         </MenuItem>
         <MenuItem onClick={handleClose}>
           <PostAdd className="sidebarIcon" />
