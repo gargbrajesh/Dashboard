@@ -10,6 +10,7 @@ import {
   NotificationsActive,
   ExitToApp,
 } from "@material-ui/icons";
+import { Link } from "react-router-dom";
 export default function SimpleMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
 
@@ -22,14 +23,14 @@ export default function SimpleMenu() {
   };
 
   return (
-    <div className ="simple_menu">
+    <div className="simple_menu">
       <Button
         aria-controls="simple-menu"
         aria-haspopup="true"
         color="inherit"
         onClick={handleClick}
       >
-    <MenuIcon className="menu"></MenuIcon>
+        <MenuIcon className="menu"></MenuIcon>
       </Button>
       <Menu
         id="simple-menu"
@@ -40,19 +41,19 @@ export default function SimpleMenu() {
       >
         <MenuItem onClick={handleClose}>
           <Book className="sidebarIcon" />
-          Blog Post
+          <Link to="/Blog"> Blog Post</Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
           <PostAdd className="sidebarIcon" />
-          link1
+          <Link to="/link"> Link 1</Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
           <NotificationsActive className="sidebarIcon" />
-          Notification
+          <Link to="/notification"> Notification</Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
           <ExitToApp className="sidebarIcon" />
-          LogOut
+          <Link to="/logout"> LogOut</Link>
         </MenuItem>
       </Menu>
     </div>

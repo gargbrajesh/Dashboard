@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function Link() {
-    return (
-        <div>
-            This is Link page
-        </div>
-    )
+  return <div>This is Link page</div>;
 }
 
-export default Link
+export default Link;

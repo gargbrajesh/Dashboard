@@ -5,13 +5,15 @@ import {
   NotificationsActive,
   ExitToApp,
 } from "@material-ui/icons";
-import { BrowserRouter as Router, Switch, Route,Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 export default function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebarWrapper">
         <div className="sidebarMenu">
-          <h3 className="sidebarTitle"> Dashboard </h3>
+          <h3 className="sidebarTitle">
+            {/* <Link to="/table" exact> Dashboard </Link> */}Dashboard
+          </h3>
           <ul className="sidebarList">
             <li className="sidebarListItem">
               <Book className="sidebarIcon" />
